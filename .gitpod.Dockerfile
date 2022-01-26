@@ -19,3 +19,5 @@ RUN cabal install Agda
 
 
 ENV PATH "$PATH:$HOME/.cabal/bin/"
+
+RUN ( echo "" ; echo "(setq agda2-backend \"GHC\" )" ; echo "" ) >> /home/gitpod/.emacs
