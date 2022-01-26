@@ -14,5 +14,8 @@ RUN cabal install alex happy
 
 RUN sudo apt-get install -y zlib1g-dev libncurses5-dev
 
+RUN sudo apt-get install -y emacs
 RUN cabal install Agda
 
+
+ENV PATH "$PATH:$HOME/.cabal/bin/"
