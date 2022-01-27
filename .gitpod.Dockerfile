@@ -22,4 +22,4 @@ ENV PATH "$PATH:$HOME/.cabal/bin/"
 
 RUN ( echo "" ; echo "(setq agda2-backend \"GHC\" )" ; echo "" ) >> /home/gitpod/.emacs
 
-RUN ( echo "" ; echo "(load-file (let ((coding-system-for-read \'utf-8)) (shell-command-to-string \"agda-mode locate\")))" ; echo "" ) >> /home/gitpod/.emacs
+RUN ( echo "" ; echo "(load-file (let ((coding-system-for-read 'utf-8)) (shell-command-to-string \"agda-mode locate\")))" ; echo "" ) >> /home/gitpod/.emacs
